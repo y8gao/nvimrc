@@ -11,7 +11,8 @@ vim.keymap.set('n', '<leader>e', ':e $MYVIMRC<CR>', opts)
 vim.keymap.set('n', '<leader>r', ':so %<CR>', opts)
 vim.keymap.set('n', '<Leader>w', ':w<CR>', opts)
 vim.keymap.set('n', '<leader>q', ':q<CR>', opts)
-vim.keymap.set('n', '<C-S-b>', ':NvimTreeToggle<CR>', opts)
+vim.keymap.set('n', '<leader>wm', ':NvimTreeToggle<CR>', opts)
+
 -----------------
 -- Normal mode --
 -----------------
