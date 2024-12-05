@@ -7,7 +7,7 @@ local opts = {
 vim.g.mapleader = ','
 
 -- autoreload init.lua
-vim.keymap.set('n', '<leader>e', ':e ~/AppData/Local/nvim/init.lua<CR>', opts)
+vim.keymap.set('n', '<leader>e', ':e $MYVIMRC<CR>', opts)
 vim.keymap.set('n', '<leader>r', ':so %<CR>', opts)
 vim.keymap.set('n', '<Leader>w', ':w<CR>', opts)
 vim.keymap.set('n', '<leader>q', ':q<CR>', opts)
