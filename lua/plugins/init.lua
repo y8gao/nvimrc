@@ -236,6 +236,21 @@ return {
     },
   },
 
+  -- Terminal integration
+  {
+    "akinsho/toggleterm.nvim",
+    version = "*",
+    event = "VeryLazy",
+    opts = require "configs.toggleterm",
+    keys = {
+      { "<C-\\>", "<cmd>ToggleTerm<CR>", desc = "Toggle terminal" },
+      { "<leader>tv", "<cmd>ToggleTerm direction=vertical<CR>", desc = "Terminal vertical" },
+      { "<leader>th", "<cmd>ToggleTerm direction=horizontal<CR>", desc = "Terminal horizontal" },
+      { "<leader>tf", "<cmd>ToggleTerm direction=float<CR>", desc = "Terminal float" },
+      { "<leader>tt", "<cmd>ToggleTerm<CR>", desc = "Toggle terminal" },
+    },
+  },
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 

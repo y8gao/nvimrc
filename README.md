@@ -48,6 +48,7 @@ This repo uses NvChad as a base plugin. The main configuration files are:
 - **[mason.nvim](https://github.com/williamboman/mason.nvim)** - Package manager for LSP servers, formatters, linters
 - **[themery.nvim](https://github.com/zaldih/themery.nvim)** - Theme switcher
 - **[fidget.nvim](https://github.com/j-hui/fidget.nvim)** - LSP progress notifications
+- **[toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)** - Terminal integration with multiple window modes
 
 ## Key Bindings
 
@@ -109,6 +110,15 @@ This repo uses NvChad as a base plugin. The main configuration files are:
 | Key | Action |
 |-----|--------|
 | `<leader>mp` | Open markdown preview (Peek) |
+
+### Terminal
+| Key | Action |
+|-----|--------|
+| `<C-\>` | Toggle terminal |
+| `<leader>tv` | Open terminal vertically |
+| `<leader>th` | Open terminal horizontally |
+| `<leader>tf` | Open terminal floating |
+| `<leader>tt` | Toggle terminal |
 
 ### Copilot
 | Key | Action |
