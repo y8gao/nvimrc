@@ -10,6 +10,8 @@ if vim.g.neovide then
   vim.g.neovide_cursor_animation_length = 0.1
   vim.g.neovide_cursor_trail_length = 0.5
   vim.g.neovide_cursor_antialiasing = true
+  vim.g.neovide_cursor_blink = true
+  vim.g.neovide_cursor_vfx_mode = "railgun"
   
   -- Window options
   vim.g.neovide_remember_window_size = true
@@ -17,6 +19,18 @@ if vim.g.neovide then
   
   -- Scroll animation (smooth scrolling)
   vim.g.neovide_scroll_animation_length = 0.3
+  
+  -- Background blur effect
+  -- vim.g.neovide_background_color = "#11121d"
+  vim.g.neovide_blur = 90
+
+  -- title bar color
+  vim.g.neovide_title_background_color = string.format(
+    "%x",
+    vim.api.nvim_get_hl(0, {id=vim.api.nvim_get_hl_id_by_name("Normal")}).bg
+  )
+  
+  vim.g.neovide_title_text_color = "white"
   
   -- Padding around editor
   vim.g.neovide_padding_top = 10

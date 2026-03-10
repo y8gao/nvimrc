@@ -130,6 +130,12 @@ This repo uses NvChad as a base plugin. The main configuration files are:
 | `<leader>ccf` | Fix code (normal/visual) |
 | `<leader>ccd` | Generate documentation (normal/visual) |
 
+### Clipboard & Paste
+| Key | Action |
+|-----|--------|
+| `<S-Insert>` | Paste from clipboard (Windows) |
+| `<D-v>` / `<Cmd-v>` | Paste from clipboard (Mac) |
+
 ## Installation & Setup
 
 ### Prerequisites
@@ -158,6 +164,19 @@ Available themes:
 - catppuccin
 - monokai
 - solarized
+
+## Neovide GUI Configuration
+
+When running in Neovide, the following visual enhancements are enabled:
+- **Cursor animation** - Smooth cursor movement with railgun trail effect
+- **Cursor blink** - Blinking cursor for better visibility
+- **Background blur** - Blurred window background effect (blur: 50)
+- **Smooth scrolling** - Animated scrolling for `Ctrl+U/D`
+- **Window transparency** - 0.9 opacity for semi-transparent window
+- **Padding** - 10px padding around the editor for breathing room
+- **Font** - SauceCodePro Nerd Font Mono at size 12
+
+All settings are automatically applied when running Neovide, with no changes needed in terminal Neovim.
 
 ## Configuration Structure
 
